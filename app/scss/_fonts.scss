@@ -1,0 +1,4 @@
+@import "_mixins/font-face";
+
+@include font-face("Circe", "../fonts/Circe-Regular");
+@include font-face("Circe", "../fonts/Circe-Bold", bold);

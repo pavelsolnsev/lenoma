@@ -1,0 +1,18 @@
+$default-font: "Circe", sans-serif;
+$accent: #F9C869;
+$blue: #66C7CD;
+$red: #F86868;
+$dark: #151515;
+
+$full-width: 1921;
+$screen-height: 1300;
+
+@function vmax($pixels, $context: $full-width) {
+  @return #{($pixels/$context)* 100}vmax;
+}
+@function vw($pixels, $context: $full-width) {
+  @return #{($pixels/$context)* 100}vw;
+}
+@function vh($pixels, $context: $screen-height) {
+  @return #{($pixels/$context)* 100}vh
+}

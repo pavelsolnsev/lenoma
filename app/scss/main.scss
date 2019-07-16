@@ -1,0 +1,148 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+
+input,  textarea::-webkit-input-placeholder {
+ font-size: 12px !important;
+ color: #7c7c7c;
+}
+ 
+input,  textarea:-moz-placeholder { /* Firefox 18- */
+	font-size: 12px !important;
+	color: #7c7c7c;
+}
+ 
+input,  textarea::-moz-placeholder {  /* Firefox 19+ */
+	font-size: 12px !important;
+	color: #7c7c7c;
+}
+ 
+input,  textarea:-ms-input-placeholder {  
+	font-size: 12px !important;
+	color: #7c7c7c;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 14px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	letter-spacing: 0.050em;
+	color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.4;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+h1 {
+	font-weight: 800;
+}
+
+h2 {
+	color: #2a2a2a;
+	font-size: 30px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.btn {	
+	display: inline-block;
+	border: solid 1px #fff;
+	width: vw(170);
+	color: #fff;
+	text-decoration: none;
+	background-color: transparent;
+	padding: 5px 0;
+	font-size: vmax(12);
+	border-radius: 5px;
+	text-align: center;
+	outline: none;
+	margin-left: auto;
+	&:hover {
+		color: #fff;
+	}
+}			
+
+b, strong {
+	font-weight: bold;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active 
+
+{
+  outline: none;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+}
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button,
+input { 
+  overflow: visible;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+}
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button,
+input { 
+  overflow: visible;
+}
+
+.container-fluid_plain {
+  padding: 0;
+}
+
+.container {
+  max-width: 100%;
+  position: relative;
+  width: 88.13vw;
+  margin: 0 auto;
+}
+
+/*------HEADER-------*/
+
+
+
+
+
+@import "media";
