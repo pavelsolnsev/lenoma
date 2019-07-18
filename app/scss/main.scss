@@ -2,27 +2,6 @@
 @import "fonts";
 @import "libs";
 
-
-input,  textarea::-webkit-input-placeholder {
- font-size: 12px !important;
- color: #7c7c7c;
-}
- 
-input,  textarea:-moz-placeholder { /* Firefox 18- */
-	font-size: 12px !important;
-	color: #7c7c7c;
-}
- 
-input,  textarea::-moz-placeholder {  /* Firefox 19+ */
-	font-size: 12px !important;
-	color: #7c7c7c;
-}
- 
-input,  textarea:-ms-input-placeholder {  
-	font-size: 12px !important;
-	color: #7c7c7c;
-}
-
 html, body {
 	height: 100%;
 }
@@ -31,27 +10,38 @@ body {
 	font-size: 14px;
 	min-width: 320px;
 	position: relative;
-	line-height: 1.65;
 	font-family: $default-font;
 	overflow-x: hidden;
-	letter-spacing: 0.050em;
-	color: #000;
+	letter-spacing: 0.025em;
+	color: #302a31;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	line-height: 1.4;
+h1, h2, h3{
 	margin: 0;
 	padding: 0;
+	text-transform: uppercase;
+}
+
+h1, h2 {
 	font-weight: bold;
 }
 
 h1 {
-	font-weight: 800;
+	font-size: 56px;
 }
 
 h2 {
-	color: #2a2a2a;
-	font-size: 30px;
+	font-size: 36px;
+	text-align: center;
+	&:after {
+		content: '';
+		width: 420px;
+		height: 2px;
+		background: $accent;
+		display: block;
+		margin: 0 auto;
+		margin-top: 26px;
+	}
 }
 
 p {
@@ -85,6 +75,7 @@ input, input:hover, input:focus, input:active,
 button, button:hover, button:focus, button:active 
 
 {
+	overflow: visible;
   outline: none;
 }
 
@@ -92,57 +83,21 @@ a, a:hover, a:active {
   text-decoration: none;
 }
 
-ul, li {
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-button,
-input { 
-  overflow: visible;
-}
-
-a, a:hover, a:active {
-  text-decoration: none;
 }
 
 ul, li {
   display: block;
   padding: 0;
   margin: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-button,
-input { 
-  overflow: visible;
 }
 
 .container-fluid_plain {
   padding: 0;
 }
 
-.container {
-  max-width: 100%;
-  position: relative;
-  width: 88.13vw;
-  margin: 0 auto;
-}
-
 /*------HEADER-------*/
-
-
-
-
 
 @import "media";
