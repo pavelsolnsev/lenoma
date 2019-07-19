@@ -16,13 +16,98 @@
 	<meta name="msapplication-navbutton-color" content="#151515">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#151515">
+	<link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/solid.css" integrity="sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-	<header>
-		<div class="navigation">
+	<header class="header">
+		<div class="wrap-navigation">
 			<div class="container">
+				<div class="navigation">
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									О магазине  
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									Оплата 
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									Доставка 
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									Отзывы  
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									Новости  
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									Статьи 
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									Контакты  
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="menu__list">
+						<li class="menu__item menu__item_account">
+							<a href="#" class="menu__link">Личный кабинет</a>
+						</li>
+						<li class="menu__item d-flex">
+							<a href="#" class="menu__link">Избранное</a>
+							<span>2</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<a href="#" class="logo">
+				<img src="img/logo.png" alt="logo">
+			</a>
+			<div class="contact">
+				<form action="#">
+					<input type="search" name="text" placeholder="поиск по каталогу товаров">
+					<button type="submit" class="btn">
+					</button>
+				</form>
+				<ul class="contact__list">
+					<li class="contact__item">
+						<a href="#" class="contact__link">
+							+7 /495/ 542-05-95
+						</a>
+					</li>
+					<li class="contact__item">
+						<a href="#" class="contact__link">
+							<i class="fa fa-phone" aria-hidden="true"></i> обратный звонок
+						</a>
+					</li>
+					<li class="contact__item">
+						<a href="#" class="contact__link">
+							<i class="fa fa-envelope" aria-hidden="true"></i> обратный звонок
+						</a>
+					</li>
+					<li class="contact__item">
+						<a href="#" class="contact__link">
+							<i class="fa fa-clock" aria-hidden="true"></i> обратный звонок
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</header>

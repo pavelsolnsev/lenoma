@@ -6,14 +6,41 @@ html, body {
 	height: 100%;
 }
 
+input::-webkit-input-placeholder {
+ font-size: 14px !important;
+ color: #302a31;
+ text-transform: uppercase;
+ font-family: $default-font;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+	font-size: 14px !important;
+	color: #302a31;
+	text-transform: uppercase;
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+	font-size: 14px !important;
+	color: #302a31;
+	text-transform: uppercase;
+}
+ 
+input:-ms-input-placeholder {  
+	font-size: 14px !important;
+	color: #302a31;
+	text-transform: uppercase;
+}
+
 body {
 	font-size: 14px;
 	min-width: 320px;
 	position: relative;
 	font-family: $default-font;
-	overflow-x: hidden;
+	overflow: hidden;
 	letter-spacing: 0.025em;
 	color: #302a31;
+	margin: 0;
+	padding: 0;
 }
 
 h1, h2, h3{
@@ -49,24 +76,6 @@ p {
 	padding: 0;
 }
 
-.btn {	
-	display: inline-block;
-	border: solid 1px #fff;
-	width: vw(170);
-	color: #fff;
-	text-decoration: none;
-	background-color: transparent;
-	padding: 5px 0;
-	font-size: vmax(12);
-	border-radius: 5px;
-	text-align: center;
-	outline: none;
-	margin-left: auto;
-	&:hover {
-		color: #fff;
-	}
-}			
-
 b, strong {
 	font-weight: bold;
 }
@@ -94,10 +103,121 @@ ul, li {
   margin: 0;
 }
 
-.container-fluid_plain {
-  padding: 0;
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 15px;
+}
+
+.d-flex {
+	display: flex;
 }
 
 /*------HEADER-------*/
+
+.wrap-navigation {
+	padding: 14px 0;
+	border-bottom: solid 1px #eceaed;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu__list {
+	display: flex;
+}
+
+.menu__item {
+	margin-right: 50px;
+	&:last-child {
+		margin-right: 0;
+	}
+	span {
+		width: 15px;
+    height: 15px;
+    background: #c1a067;
+    color: #fff;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 15px;
+    font-size: 10px;
+    margin-top: -4px;
+	}
+}
+
+.menu__item_account {
+	margin-right: 87px;
+	position: relative;
+	&:after {
+		content: '';
+    height: 52px;
+    width: 1px;
+    position: absolute;
+    background: #eceaed;
+    top: -17px;
+    right: -40px;
+	}
+	&:before {
+		content: '';
+    height: 52px;
+    width: 1px;
+    position: absolute;
+    background: #eceaed;
+    top: -17px;
+    left: -40px;
+	}
+}
+
+.menu__link {
+	color: #302a31;
+	transition: all 0.3s ease;
+	font-size: 13px;
+	&:hover {
+		color: #c1a067;
+	}
+}
+
+/*------HEADER MAIN-------*/
+
+.main {
+	display: flex;
+}
+
+.logo {
+	display: block;
+}
+
+form {
+	position: relative;
+	width: 800px;
+	border-bottom: solid 2px #c1a067;
+	display: flex;
+	padding-bottom: 20px;
+}
+
+input {
+	width: 100%;
+	border: none;
+}
+
+.btn {
+	border: none;
+	background: transparent;
+	&:before {
+		content: "\f002";
+		font-family: FontAwesome;
+		font-size: 20px;
+		color: #c1a067;
+		cursor: pointer;
+	}
+}
 
 @import "media";
