@@ -29,8 +29,6 @@
 		right: -20px;
 		transform: rotate(270deg);
 		letter-spacing: 1.2em;
-
-
 	}
 
 	.menu__item_account {
@@ -62,10 +60,79 @@
 		column-count: 2;
 
 	}
+
+	.offer__text {
+		z-index: 10;
+		top: 270px
+	}
+
+	.offer__title {
+		font-size: 36px;
+	}
+
+	.offer__recommended {
+		padding: 30px;
+	}
+
+	.offer__picture {
+		width: auto;
+		margin: 0;
+		.offfer__jpg {
+			width: 100% !important;
+		}
+	}
+
+	.offer__recommended-title {
+		&:after {
+			width: 100%;
+		}
+	}
+
+	.offer__resource {
+		&:before {
+			display: none;
+		}
+	} 
+
+	.offer__list {
+		padding-right: 0;
+		justify-content: space-around;
+	}
+
+	.header {
+		padding-bottom: 30px;
+	} 
 }
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.offer__recommended {
+		position: inherit;
+		text-align: center;
+	}
 
+	.offer__img {
+		display: none;
+	}
+
+	.offer__title {
+		top: 50%;
+		margin-top: -250px;
+	}
+
+	.offer__text {
+		z-index: 10;
+		top: 50%;
+		margin-top: -133px;
+	}
+
+	.owl-dots {
+		left: 6%;
+	}
+
+	.offer__list {
+		margin-top: 10px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -111,6 +178,21 @@
 			letter-spacing: 1.2em;
 			margin-bottom: 0;
 		}
+
+		.offer__title {
+			font-size: 26px;
+			margin-top: -189px;
+		}
+
+		.offer__text {
+			font-size: 12px;
+			margin-top: -100px;
+		}
+
+		.offer__resource {
+			font-size: 10px;
+			margin-bottom: 20px;
+		}
 }
 
 /* Extra Small Devices, Phones */
@@ -130,6 +212,35 @@
 	.menu__list {
 		display: block;
 	}
+
+	.offer__text {
+		display: none;
+	}
+
+	.offer__title {
+		font-size: 16px;
+		margin-top: -160px
+	}
+
+	.offer__recommended-title {
+		font-size: 16px;
+	}
+
+	.offer__recommended-link {
+		font-size: 10px;
+	}
+
+	.owl-carousel button.owl-dot {
+		margin: 0 5px;
+	}
+
+	.offer__list {
+		flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	}
+
 }
 
 @media only screen and (max-width : 439px) {
