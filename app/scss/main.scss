@@ -42,6 +42,7 @@ h1 {
 h2 {
 	font-size: 36px;
 	text-align: center;
+	margin-bottom: 80px;
 	&:after {
 		content: '';
 		width: 420px;
@@ -59,6 +60,7 @@ h3 {
 
 h4 {
 	font-size: 16px;
+	font-weight: inherit;
 }
 
 p {
@@ -102,6 +104,10 @@ ul, li {
 	margin: 0 auto;
 	width: 100%;
 	padding: 0 15px;
+}
+
+.section {
+	padding-top: 67px;
 }
 
 .d-flex {
@@ -271,8 +277,6 @@ input {
 	justify-content: space-between;
 }
 
-
-
 .contact__link {
 	color: $dark;
 	text-transform: uppercase;
@@ -418,10 +422,6 @@ input {
   background: $accent;
 }
 
-.owl-nav {
-	display: none;
-}
-
 .offer__recommended-link {
 	color: $dark;
 	&:hover {
@@ -481,13 +481,61 @@ input {
 		&:before {
 			content: '';
 	    display: block;
-	    width: 68px;
+	    width: 62px;
 	    background: #c16774;
 	    height: 1px;
 	    position: absolute;
-	    top: 10px;
-	    left: -6px;
+	    top: 8px;
+	    left: -10px;
 		}
 	}
+	.owl-nav {
+		display: block !important;
+		top: 50%;
+		color: #edecec;
+		font-size: 50px;
+		position: absolute;
+		width: 100%;
+			.owl-next {
+				position: absolute;
+				right: 0;
+			}
+			.owl-prev {
+				position: absolute;
+				left: 0;
+			}
+	}
 }
+
+.content__title {
+	margin: 40px 0 25px;
+}
+
+.content__text, .content__prices {
+	margin-bottom: 25px;
+	font-size: 13px;
+}
+
+.content__item {
+	position: relative;
+	img {
+		vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+	}
+}
+
+.sale {
+	position: absolute;
+	width: 47px;
+	background: $red;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 2px 0;
+	top: 0;
+  left: 1px;
+}
+
+
 @import "media";

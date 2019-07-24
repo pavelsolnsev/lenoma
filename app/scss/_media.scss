@@ -241,6 +241,19 @@
     text-align: center;
 	}
 
+	h2 {
+		&:after {
+			width: 90%;
+		}
+	}
+
+	.content__item {
+		img {
+			width: auto !important;
+			margin: 0 auto;
+		}
+	}
+
 }
 
 @media only screen and (max-width : 439px) {
