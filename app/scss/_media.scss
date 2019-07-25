@@ -101,6 +101,10 @@
 
 	.header {
 		padding-bottom: 30px;
+	}
+
+	.brand {
+		justify-content: center;
 	} 
 }
 
@@ -252,6 +256,10 @@
 			width: auto !important;
 			margin: 0 auto;
 		}
+	}
+
+	.slider__list {
+		text-align: center;
 	}
 
 }

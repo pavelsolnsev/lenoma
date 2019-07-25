@@ -25,13 +25,13 @@ body {
 	padding: 0;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5 {
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
 }
 
-h1, h2 {
+h1, h2, h5 {
 	font-weight: bold;
 }
 
@@ -52,6 +52,9 @@ h2 {
 		margin: 0 auto;
 		margin-top: 26px;
 	}
+	span {
+		display: block;
+	}
 }
 
 h3 {
@@ -61,6 +64,12 @@ h3 {
 h4 {
 	font-size: 16px;
 	font-weight: inherit;
+}
+
+h5 {
+	color: $accent;
+	text-align: center;
+	cursor: pointer;
 }
 
 p {
@@ -470,7 +479,7 @@ input {
 	}
 }
 
-/*------SECTION SALES-------*/
+/*------SECTION SLIDERS-------*/
 
 .content {
 	text-align: center;
@@ -496,6 +505,12 @@ input {
 		font-size: 50px;
 		position: absolute;
 		width: 100%;
+			.owl-next, .owl-prev {
+				&:hover {
+					color: $accent;
+					transition: all 0.5s ease;
+				}
+			}
 			.owl-next {
 				position: absolute;
 				right: 0;
@@ -537,5 +552,104 @@ input {
   left: 1px;
 }
 
+/*------SECTION SLIDERS-------*/
+
+.brands {
+	h2 {
+		margin-bottom: 30px;
+	}
+}
+
+.brand {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 60px;
+	margin-top: 20px;
+}
+
+.slider__list {
+	width: 60%;
+	margin: 0 auto;
+	line-height: 40px;
+	font-size: 16px;
+}
+
+.slider {
+	.owl-nav {
+		display: block !important;
+		top: 30%;
+		color: #edecec;
+		font-size: 50px;
+		position: absolute;
+		width: 100%;
+			.owl-next, .owl-prev {
+				&:hover {
+					color: $accent;
+					transition: all 0.5s ease;
+				}
+			}
+			.owl-next {
+				position: absolute;
+				right: 0;
+			}
+			.owl-prev {
+				position: absolute;
+				left: 0;
+			}
+	}
+}
+
+/*------SECTION ARTICLES-------*/
+
+.articles {
+	padding-top: 120px;
+}
+
+.article  {
+	display: flex;
+	justify-content: space-between;
+}
+
+.article__block-left {
+	width: 585px;
+}
+
+.article__block-right {
+	width: 640px;
+	position: relative;
+	background: #f9f9f9;
+	padding-top: 140px;
+	padding-bottom: 33px;
+	padding-left: 20px;
+	padding-right: 20px;
+	top: -176px;
+}
+
+.article__date {
+	color: $accent;
+	font-size: 13px;
+	margin: 17px 0;
+}
+
+.article__border {
+	border-bottom: 1px solid #eceaed;
+	padding-bottom: 30px;
+	margin-bottom: 37px;
+}
+
+.article__news {
+	width: 400px;
+	position: relative;
+	z-index: 1;
+	margin-top: 20px;
+	margin-bottom: 100px;
+	img {
+		position: absolute;
+		z-index: -1;
+		top: -20px;
+
+	}
+}
 
 @import "media";
