@@ -105,6 +105,21 @@
 
 	.brand {
 		justify-content: center;
+	}
+
+	.article {
+		flex-direction: column;
+	}
+
+	.article__block-right {
+		top: 0;
+		width: auto;
+		padding-top: 33px;
+	}
+
+	.article__block-left {
+		width: auto;
+		margin-bottom: 40px;
 	} 
 }
 
@@ -196,6 +211,15 @@
 		.offer__resource {
 			font-size: 10px;
 			margin-bottom: 20px;
+		}
+
+		.article__news {
+			width: auto;
+			img {
+				position: relative;
+				right: 0 !important;
+				left: 0 !important;
+			}
 		}
 }
 
