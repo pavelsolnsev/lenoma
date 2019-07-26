@@ -764,4 +764,132 @@ footer {
 	}
 }
 
+/*------MODAL HAMBURGER-------*/
+
+.menu-modal {
+	background: #fff;
+	position: fixed;
+    top: 0;
+    bottom: 100%;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    transition: .7s;
+    overflow: hidden;
+    img {
+    	width: 120px;
+    }
+}
+
+.menu-modal-two {
+	background: #302a31;
+}
+
+.menu-modal__list {
+		height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-modal__item {
+	  margin-bottom: 80px;
+    position: relative;
+    &:first-child {
+		&:before {
+			display: none;
+		} 
+	}
+	
+	&:before {
+		content: "";
+	    width: 7px;
+	    height: 7px;
+	    background: $dark;
+	    border-radius: 50%;
+	    position: absolute;
+	    top: -1.875rem;
+	    left: 50%;
+	    transform: translateX(-50%);
+    }
+}
+
+.menu-modal__item {
+		&:last-child {
+			.menu-modal__link-two {
+				border: none;
+			}
+		}
+	}
+
+.menu-modal__link {
+	color: $dark;
+	text-transform: uppercase;
+  font-size: 27px;
+  &:hover {
+  	color: $accent;
+  	transition: all 0.5s ease;
+  }
+}
+
+.menu-modal__link-two {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 40px;
+}
+
+
+.menu-modal__logo {
+	position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.menu-modal__close {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+    top: 4%;
+    right: 5%;
+    color: $dark;
+    cursor: pointer;
+	&:before {
+		content: "";
+	    width: 100%;
+	    height: 4px;
+	    background: $dark;
+	    border-radius: 2px;
+	    position: absolute;
+	    transform: rotate(45deg);
+	    transform-origin: center;
+	}
+	&:after {
+		content: "";
+	    width: 100%;
+	    height: 4px;
+	    background: $dark;
+	    border-radius: 2px;
+	    position: absolute;
+	    transform: rotate(-45deg);
+	    transform-origin: center;
+	}
+}
+
+.menu-modal__close-two {
+	color: #fff;
+	&:before {
+		background: #fff;
+	}
+		&:after {
+		background: #fff;
+	}
+}
+
+.menu-modal_active {
+		bottom: 0;
+    overflow: scroll;
+}
+
+
 @import "media";
