@@ -152,6 +152,17 @@
 	.offer__list {
 		margin-top: 10px;
 	}
+
+	.footer__list {
+		padding: 0 20px;
+		&:last-child {
+			margin-top: 80px;
+		}
+	}
+
+	.footer {
+		flex-wrap: wrap;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -223,6 +234,15 @@
 		}
 }
 
+@media only screen and (max-width : 662px) {
+	.footer__list {
+		padding: 0 20px;
+			&:nth-child(3) {
+				margin-top: 80px;
+		}
+	}
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px) {
 	.contact__list {
@@ -286,11 +306,30 @@
 		text-align: center;
 	}
 
+	.footer-two {
+		flex-direction: column;
+	}
+
+	.footer-two__left {
+		margin-bottom: 10px;
+	}
+
 }
 
-@media only screen and (max-width : 439px) {
+@media only screen and (max-width : 413px) {
+	.footer__list {
+			&:nth-child(2) {
+				margin-top: 80px;
+		}
+	}
 
+	.instagram__block  {
+		p {
+			font-size: 11px;
+		}
+	}
 }
+
 
 /*==========  Mobile First  ==========*/
 
