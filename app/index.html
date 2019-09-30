@@ -21,6 +21,19 @@
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+	 <!-- Preloader: Start -->
+    <div id="page-preloader">
+       <div class="cssload-thecube">
+					<div class="cssload-cube cssload-c1"></div>
+					<div class="cssload-cube cssload-c2"></div>
+					<div class="cssload-cube cssload-c4"></div>
+					<div class="cssload-cube cssload-c3"></div>
+			</div>
+    </div>
+
+    <!-- scrollTop -->
+    <div class='scrolltotop'></div>
+
 	<header class="header">
 		<div class="wrap-navigation">
 			<div class="container">
@@ -93,12 +106,11 @@
 					<div class="contact">
 						<form action="#">
 							<input type="search" name="text" placeholder="поиск по каталогу товаров">
-							<button type="submit" class="btn">
-							</button>
+							<button type="submit" class="btn"><i class="fas fa-search"></i></button>
 						</form>
 						<ul class="contact__list">
 							<li class="contact__item">
-								<a href="#" class="contact__link">
+								<a href="tel:+74955420595" class="contact__link">
 									+7 /495/ 542-05-95
 								</a>
 							</li>
@@ -108,7 +120,7 @@
 								</a>
 							</li>
 							<li class="contact__item">
-								<a href="#" class="contact__link">
+								<a href="mailto:info@lenoma.ru" class="contact__link">
 									<i class="fa fa-envelope" aria-hidden="true"></i> info@lenoma.ru
 								</a>
 							</li>
@@ -128,10 +140,10 @@
 		</div>
 		<div class="wrap-services">
 			<div class="container">
-				<ul class="services">
 					<div class="services__humburger" id="buttonModalTwo">
 						<i class="fas fa-bars"></i>
 					</div>
+				<ul class="services">
 					<li class="services__item">
 						<a href="#" class="services__link">
 							Акция 
@@ -305,7 +317,7 @@
 			</ul>
 		</div>
 	</section>
-	<section class="section sales">
+	<section class="section sales animated">
 		<h2>хиты продаж</h2>
 		<div class="container">
 			<div class="content owl-carousel">
@@ -361,7 +373,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section news">
+	<section class="section news animated">
 		<h2>новинки</h2>
 		<div class="container">
 			<div class="content owl-carousel">
@@ -413,7 +425,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section special">
+	<section class="section special animated">
 		<h2>специальные<br> предложения</h2>
 		<div class="container">
 			<div class="content owl-carousel">
@@ -465,7 +477,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section brands">
+	<section class="section brands animated">
 		<h2>топ брендов</h2>
 		<h5>все бренды</h5>
 		<div class="container">
@@ -525,13 +537,13 @@
 		<h2>статьи и новости</h2>
 		<div class="container">
 			<div class="article">
-				<div class="article__block-left">
+				<div class="article__block-left animated">
 					<article class="article__border">
 						<h4>Парфюмерия в нашей жизни</h4>
 						<p class="article__date">
 							26 апреля 2017
 						</p>
-						<p class="article__text">
+						<p class="article__text fadeInLeft animated">
 							Как ароматы могут влиять на ваше настроение, самочувствие, деловые отношения и любовные завоевания? Все секреты магической силы различных парфюмов, вы, сможете открыть для себя, прочитав эту статью!
 						</p>
 					</article>
@@ -555,7 +567,7 @@
 					</article>
 					<h5>смотреть все статьи</h5>
 				</div>
-				<div class="article__block-right">
+				<div class="article__block-right animated">
 					<article class="article__news" style="margin-left: auto">
 						<img src="img/news.png" alt="статьи" style="left: -190px">
 						<h4>Geza Shoen, Mark Buxton и Bertrand Duchaufour</h4>
@@ -630,10 +642,10 @@
 							<a href="#" class="contact__link">
 								<i class="fa fa-phone" aria-hidden="true"></i> обратный звонок
 							</a>
-							<a href="#" class="contact__link">
+							<a href="mailto:info@lenoma.ru" class="contact__link">
 								<i class="fa fa-envelope" aria-hidden="true"></i> info@lenoma.ru
 							</a>
-							<a href="#" class="contact__link">
+							<a href="skype:lenoma.ru?call" class="contact__link">
 								<i class="fab fa-skype" aria-hidden="true"></i> skype: lenoma.ru
 							</a>
 						</li>
@@ -670,7 +682,7 @@
 	<!-- Modal hamburger -->
 	<nav class="menu-modal" id="menuModal">
 		<a href="#" class="menu-modal__logo">
-			<img class="menu__icon" src="img/logo.png">
+			<img class="menu__icon" src="img/logo.png" alt="logo">
 		</a>
 		<a href="#" class="menu-modal__close" id="menuModalClose"></a>
 		<ul class="menu-modal__list">

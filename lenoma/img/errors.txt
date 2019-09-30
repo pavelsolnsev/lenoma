@@ -1,6 +1,0 @@
-[7/16/2019, 5:55:09 PM] layer "+7 /495/ 542-05-95": Expected Either a default asset specification or a layer asset specification but "+" found.
-[7/16/2019, 5:55:09 PM] layer "+7 /495/ 542-05-9": Expected Either a default asset specification or a layer asset specification but "+" found.
-[7/16/2019, 5:55:09 PM] layer "info@lenoma.ru": Unsupported extension: ru
-[7/16/2019, 5:55:09 PM] layer "skype: lenoma.ru": Unsupported extension: ru
-[7/16/2019, 5:55:09 PM] layer "info@lenoma.ru": Unsupported extension: ru
-[7/16/2019, 5:55:09 PM] layer "© 2017. Lenoma.ru ": Unsupported extension: ru

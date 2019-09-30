@@ -52,6 +52,7 @@ $(function() {
     }
 })
 
+ // modal window
     $('#buttonModal').click(function() {
 		$('#menuModal').addClass('menu-modal_active');
 	});
@@ -68,8 +69,43 @@ $(function() {
 		$('#menuModalTwo').removeClass('menu-modal_active');
 	});
 
+ // Preloader
+    var $preloader = $('#page-preloader'),
+    $spinner   = $preloader.find('.spinner');
+    $spinner.fadeOut();
+    $preloader.delay(800).fadeOut('slow');
 
+    $(window).scroll(function(){
+        if($(document).scrollTop()>$(window).height()){
+            $('.scrolltotop').show();
+        }else{
+            $('.scrolltotop').hide();
+        }
+      });
+      $('.scrolltotop').click(function(){
+        $('html,body').animate({scrollTop: 0}, 600);
+  });
+
+$(window).scroll(function() {
+        $('.news, .brands, .article__block-right').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+350) {
+                $(this).addClass("fadeInRight");
+            }
+        });
+        $('.sales, .special, .article__block-left').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+350) {
+                $(this).addClass("fadeInLeft");
+            }
+        });
+    });
 });
+
 
 
 
